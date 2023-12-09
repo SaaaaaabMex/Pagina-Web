@@ -1,0 +1,150 @@
+/* Reset de estilos para quitar márgenes y rellenos predeterminados */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #e26060;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(247, 133, 133, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    font-family: 'Pacifico', cursive;
+}
+
+/* Estilos de la barra de navegación */
+nav {
+    background-color: #d36c6c;
+    color: #fff;
+    text-align: center;
+    font-family: 'Parisienne', cursive; /* Cambia la fuente de la barra de navegación a Parisienne */
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Verdana', sans-serif; /* Cambia la fuente de los enlaces a Verdana */
+}
+
+/* Estilos del contenido principal */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #e9dede;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: 'Helvetica', sans-serif; /* Cambia la fuente de h2 a Helvetica */
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+    font-family: 'Georgia', serif; /* Cambia la fuente de los párrafos a Georgia */
+}
+
+ul {
+    font-size: 16px;
+    font-family: 'Courier New', monospace; /* Cambia la fuente de las listas a Courier New */
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #d36c6c;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Comic Sans MS', cursive; /* Cambia la fuente del pie de página a Comic Sans MS */
+}
+
+/* Estilos de la biografía */
+.biography {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: left;
+}
+
+.biography img {
+    max-width: 60%;
+    height: 30%;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px auto;
+    display: block;
+}
+
+/* Estilos de la tabla */
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    max-width: 80%;
+    font-family: 'Impact', sans-serif; /* Cambia la fuente de la tabla a Impact */
+}
+
+table, th, td {
+    border: 1px solid #ffe6e6;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #d36c6c;
+    color: #000000;
+}
+
+/* Estilos del contenedor de video */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

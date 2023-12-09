@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Young Miko - Estrella en Ascenso</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Young Miko - Estrella en Ascenso</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="biografia.html">Biografía</a></li>
+            <li><a href="musica.html">Música</a></li>
+            <li><a href="acercade.html">Acerca de</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="intro">
+            <h1>Conoce a Young Miko</h1>
+            <img src="https://i.pinimg.com/564x/00/e9/61/00e9615902a2560351a0c4009c77749f.jpg" alt="Young Miko"
+                height="200" width="300" style="display: block; margin: 0 auto;" />
+            <center><a id="instagram-link" href="https://www.instagram.com/itsyoungmiko/" target="_blank">Síguela en
+                    Instagram</a></center>
+        </section>
+
+        <section id="biografia">
+            <h2>Una Estrella en Ascenso en la Escena Musical</h2>
+            <p>Young Miko representa todo lo que pensamos cuando hablamos de un nuevo giro en la escena musical. Su
+                ascenso fue tan inmediato que la llevó a colaborar con Villano Antillano en Vendetta (2021).</p>
+            <p>"Miko" es una palabra usada para referirse a sacerdotisas japonesas. En varias ocasiones, la artista ha
+                hablado abiertamente sobre su atracción por la cultura japonesa. Por otro lado, "young" se traduce al
+                español como "joven."</p>
+        </section>
+
+        <section id="galeria">
+            <div id="carousel">
+                <img class="carousel-image active"
+                    src="https://i.pinimg.com/564x/89/e7/97/89e7971cfd478add807df8dfe173d2a2.jpg" alt="Young Miko 1" />
+                <img class="carousel-image"
+                    src="https://i.pinimg.com/564x/9d/f7/d9/9df7d9918d1f3cbe29187ed1d7309ed5.jpg" alt="Young Miko 2" />
+                <img class="carousel-image"
+                    src="https://i.pinimg.com/564x/b8/b8/fb/b8b8fbfe2790dcc1941521afd1f1d828.jpg" alt="Young Miko 3" />
+            </div>
+            <div class="carousel-button-container">
+                <button class="carousel-button" onclick="changeSlide(-1)">Anterior</button>
+                <button class="carousel-button" onclick="changeSlide(1)">Siguiente</button>
+            </div>
+        </section>
+
+        <section id="caracteristicas">
+            <h3>Características de Young Miko:</h3>
+            <ul>
+                <li>Talento musical excepcional.</li>
+                <li>Colaboración exitosa con Villano Antillano en Vendetta (2021).</li>
+                <li>Interés por la cultura japonesa.</li>
+                <li>Ascenso rápido en la escena musical.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Saaaab Mex - © 2023 Young Miko</p>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const images = document.querySelectorAll(".carousel-image");
+
+        function changeSlide(n) {
+            images[currentSlide].style.display = "none";
+            currentSlide = (currentSlide + n + images.length) % images.length;
+            images[currentSlide].style.display = "block";
+        }
+
+        // Show the initial slide
+        images[currentSlide].style.display = "block";
+    </script>
+</body>
+
+</html>
